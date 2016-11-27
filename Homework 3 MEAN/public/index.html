@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="icon" href="sign-check-icon.png">
+  <title>Resume</title>
+</head>
+<body>
+
+  <div class="container" ng-controller="AppCtrl">
+    <div><h2><p>My Name is Jose V. I am building this digital resume to display my exp I have gain while I attented school.
+      On my page I have my education, skills and projects I have been part of. In addition I have provived my GitHub account to provide my
+      source code. If you have any questions or concerns you can email me reaching me at the email on the buttton rigth of this page. Thank you for you're time.
+    </P>
+    <h1>Resume</h1>
+
+    </h2>
+    </div>
+    <table class="table">
+    <thead>
+    <tr>
+    <th>Education</th>
+    <th>Skills</th>
+    <th>Projects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="r in resume">
+    <td>{{r.edu}}</td>
+    <td>{{r.skill}}</td>
+    <td>{{r.project}}</td>
+  </tbody>
+    </table>
+    <div>
+        <h4>Below Is My GitHub Repo</h4>
+        <a href="https://github.com/jvega48" target="_blank">GitHub Repo</a>
+    </div>
+    <footer>
+      <address>
+     <b>Drawmazing Inc.</b><br />
+     1355 Market Street, Suite 900<br />
+     San Francisco, CA 94103<br />
+     <abbr title="Phone">P:</abbr> (123) 456-7890
+     </address>
+    <address>
+     <b>Jose Vega</b><br />
+     <a href="mailto:#">jvega48@calstatela.edu</a>
+     </address></footer>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+</body>
+</html>

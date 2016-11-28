@@ -14,22 +14,3 @@ var refresh = function() {
 refresh();
 
 }]);﻿
-var myApp = angular.module('myApp',['ng-Router']);
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-    when('/login', {
-      templateUrl: 'public/login.html',
-      controller: 'RegistrationController'
-    }).
-    when('/register', {
-      templateUrl: 'public/register.html',
-      controller: 'RegistrationController'
-    }).
-    when('/success', {
-      templateUrl: 'public/admin.html',
-      controller: 'SuccessController'
-    }).
-    otherwise({
-      redirectTo: '/login'
-    });
-}]);

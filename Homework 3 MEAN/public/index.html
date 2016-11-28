@@ -6,21 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="icon" href="sign-check-icon.png">
+<link rel="icon" href="Computer-96.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Resume</title>
 </head>
 <body>
 
   <div class="container" ng-controller="AppCtrl">
-    <div><h2><p>My Name is Jose V. I am building this digital resume to display my exp I have gain while I attented school.
-      On my page I have my education, skills and projects I have been part of. In addition I have provived my GitHub account to provide my
-      source code. If you have any questions or concerns you can email me reaching me at the email on the buttton rigth of this page. Thank you for you're time.
-    </P>
-    <h1>Resume</h1>
-
-    </h2>
-    </div>
-    <table class="table">
+    <h1>Resume</h1> <div style="float: right"> <img src="PC-icon.png" class="img-responsive" alt="Cinque Terre"> </div>
+  <p><h3>My name is Jose V. I am building this digital resume to display my education, skills and projects.
+    I will keep updating this web page by adding a admin and a registration form so that people can register and be
+    part of the community. I also provided my email to contact me for any question I also provided my GitHub account. Thank you for taking
+    the time to visit my page.
+  </h3></p>
+    <table class="table table-hover" class="table-responsive" >
     <thead>
     <tr>
     <th>Education</th>
@@ -29,25 +28,25 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="r in resume">
+    <tr ng-repeat="r in resume" class="info">
     <td>{{r.edu}}</td>
     <td>{{r.skill}}</td>
     <td>{{r.project}}</td>
   </tbody>
     </table>
     <div>
-        <h4>Below Is My GitHub Repo</h4>
+        <h4>Fork me in my GitHub Repository</h4>
         <a href="https://github.com/jvega48" target="_blank">GitHub Repo</a>
     </div>
+    <div><h4>Credit's For Icon</h4><a href="https://icons8.com" target="_blank">Icon pack by Icons8</a></div>
     <footer>
       <address>
      <b>Drawmazing Inc.</b><br />
-     1355 Market Street, Suite 900<br />
-     San Francisco, CA 94103<br />
-     <abbr title="Phone">P:</abbr> (123) 456-7890
+     Los Angeles, CA 90011<br />
+     <abbr title="Phone">P:</abbr> (323) 688-6742
      </address>
     <address>
-     <b>Jose Vega</b><br />
+     <b>Jose Vega</b> <span class="glyphicon glyphicon-envelope"></span><br/>
      <a href="mailto:#">jvega48@calstatela.edu</a>
      </address></footer>
   </div>
